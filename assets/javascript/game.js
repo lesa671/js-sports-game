@@ -3,9 +3,12 @@ const num_resets = document.querySelector('#num_resets')
 reset_button.addEventListener('click', function () {
     console.log('reset_button was clicked')
     teamone_numshots.innerText = 0 
+    teamone_shot_count = 0
     teamone_numgoals.innerText = 0 
-    teamtwo_numshots.innerText = 0 
-    teamtwo_numgoals.innerText = 0 
+    teamtwo_numshots.innerText = 0
+    teamtwo_shot_count = 0 
+    teamtwo_numgoals.innerText = 0
+     
     num_resets.innerHTML = parseInt(num_resets.innerText) + 1
 })
 
