@@ -2,16 +2,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-font-family: Verdana
+}
+
 .hide {
     display: none;
 }
 
 .left {
     float: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
 
 .right {
     float: right;
+    margin-right: 20px;
+    margin-bottom: 5px;
 }
 
 .clear {
@@ -20,4 +28,37 @@
 
 #reset_container, h1 {
     text-align: center;
+}
+
+h1 {
+        padding-top: 5px;
+}
+
+#reset_container {
+    background-color:purple;
+}
+
+#reset_button {
+    margin-top: 8px;
+}
+
+#num_resets, p {
+    display: inline-block;
+    font-family: var(--main-font-family, Arial);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    color: white;
+}
+
+.goals p {
+    display: inline;
+    color: black;
+}
+
+body div {
+    background-color: rgb(245, 171, 106);
+}
+
+h1, h2, span {
+    font-family: var(--main-font-family, Arial);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
