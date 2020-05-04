@@ -29,9 +29,9 @@ const num_resets = document.querySelector('#num_resets')
 reset_button.addEventListener('click', function () {
     console.log('reset_button was clicked')
 
-    if (teamone_numgoals.innerText > teamtwo_numgoals.innerText) {
+    if (parseInt(teamone_numgoals.innerText) > parseInt(teamtwo_numgoals.innerText)) {
         alert('Team 1 is the winner!')
-    } else if (teamtwo_numgoals.innerText > teamone_numgoals.innerText) {
+    } else if (parseInt(teamtwo_numgoals.innerText) > parseInt(teamone_numgoals.innerText)) {
         alert('Team 2 is the winner!')
     } else {
         alert('It\'s a tie!')
